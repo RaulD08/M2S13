@@ -1,0 +1,326 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box; /* para que las cajas no se desborden contra otras*/
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+}
+body{
+    background-color: #EBE4DC;
+    margin: 0;
+    padding: 0;
+}
+
+#fondo{
+    /*background-color: #4F4557;*/
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    border-radius: 10px;
+    padding: 0;
+}
+
+#div1{
+    background-color: #565F6F;
+    color: #F8F6F4;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 33%;
+    /*border-radius: 10px;*/
+    /*border: 3px solid #6D5D6E;*/
+    height: 100vh;
+    position: fixed;
+    right: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 33%;
+    margin: 0;
+}
+#div1B{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 33%;
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+#div2{
+    background-color: #EBE4DC;
+    color: #F4EEE0;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 2 1 67%;
+    border-radius: 10px;
+    /*border: 3px solid #6D5D6E;*/
+    margin-top: 0;
+}
+#contPres{
+    display: flex;
+    flex-flow: row wrap;
+}
+    #presentacion{
+        background-color: #565F6F;
+        flex: 1 1 100%;
+        /*border-radius: 10px;*/
+        /*border: 3px solid #b09daf;*/
+    }
+    #cuerpoPresent{
+        background-color: #565F6F;
+        flex: 1 1 100%;
+        /*border-radius: 10px;*/
+        /*border: 3px solid #b09daf;*/
+    }
+    #piePresent{
+        background-color: #565F6F;
+        flex: 1 1 100%;
+        /*border-radius: 10px;*/
+        /*border: 3px solid #b09daf;*/
+    }
+#proyectos{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+}
+    #proy1, #proy3, #proy5{
+        /*background-color: #4F4557;*/
+        flex: 1 1 40%;
+        /*border-radius: 10px;*/
+        /*border: 3px solid #b09daf;*/
+        background: linear-gradient(#EBE4DC, #EBE4DC) padding-box, 
+            linear-gradient(135deg, #565F6F88 0px, transparent 20%, transparent 80%, #565F6F88 100%) border-box;
+        border-radius: 0px;
+        border: 4px solid transparent;
+    }
+    #proy2, #proy4, #proy6{
+        /*background-color: #4F4557;*/
+        flex: 1 1 40%;
+        /*border-radius: 10px;*/
+        /*border: 3px solid #b09daf;*/
+        background: linear-gradient(#EBE4DC, #EBE4DC) padding-box, 
+            linear-gradient(45deg, #565F6F88 0px, transparent 20%, transparent 80%, #565F6F88 100%) border-box;
+        border-radius: 0px;
+        border: 4px solid transparent;
+    }
+        .tarjeta{
+            background-color: #F5F0EA;
+            color: #2C3333;
+            border-radius: 0px;
+            border: 3px solid #E0D5CA;
+            width: 90%;
+            aspect-ratio: 1/1.15;
+            margin: 5%;
+            padding: 0%;
+            position: relative;
+            transition: 0.5s;
+        }
+        .tarjeta:hover{
+            transition: 0.5s;
+            background-color: #F9F7F1;
+            border-color: #D7CABD;
+        }
+        .imgTarjeta{
+            width: 90%;
+            aspect-ratio: 16/9;
+            margin: 5%;
+            border-radius: 5px;
+            border: 3px solid #D7CABD;
+            padding: inherit;
+            transition: 0.5s;
+            filter: grayscale(80%);
+        }
+            .imgTarjetaHover{
+                transition: 0.5s;
+                filter: grayscale(0%);
+            }
+        .cuerpoTarjeta{
+            padding: 0;
+        }
+            .tituloTarjeta{
+                margin: 5%;
+                margin-top: 1%;
+                color: #7E7C79;
+                padding: 0;
+                transition: 0.5s;
+            }
+                .tituloTarjetaHover{
+                    color: #565656;
+                    transition: 0.5s;
+                }
+            .textoTarjeta{
+                margin: 5%;
+                color: #BCA895;
+                padding: 0;
+                height: 50%;
+                transition: 0.5s;
+            }
+                .textoTarjetaHover{
+                    color: #947457;
+                    transition: 0.5s;
+                }
+            
+            .btnTarjeta{
+                transition: 0.5s;
+                background-color: #466873;
+                color: #EFE6D5;
+                border: 3px solid #3B5E69;
+                border-radius: 5px;
+                padding: 2%;
+                padding-left: 7%;
+                padding-right: 7%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin-right: 5%;
+                margin-left: 5%;
+                margin-bottom: 5%;
+                text-align: center;
+                text-decoration: none;
+            }
+                .btnTarjetaHover{
+                    background-color: #2A5A6C;
+                    border-color: #275566;
+                }
+                .btnTarjeta:hover{
+                    background-color: #30667A;
+                    border-color: #2D6175;
+                    transition: 0.5s;
+                }
+
+
+@media all and (max-width: 1199px){
+    *{
+        margin: 1%;
+        padding: 1%;
+    }
+    .tarjeta{
+        width: 94%;
+        aspect-ratio: 1/1.15;
+        margin: 3%;
+        padding: 0%;
+    }
+    .imgTarjeta{
+        margin: 4%;
+        width: 92%;
+    }
+    .tituloTarjeta{
+        margin: 3%;
+        font-size:large;
+    }
+    .textoTarjeta{
+        margin: 4%;
+        font-size:medium;
+    }
+    .btnTarjeta{
+        padding: 1%;
+        padding-left: 7%;
+        padding-right: 7%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-bottom: 4%;
+    }
+}
+
+@media all and (max-width: 991px){
+    *{
+        margin: 1%;
+        padding: 1%;
+    }
+    .tarjeta{
+        width: 98%;
+        aspect-ratio: 1/1.15;
+        margin: 1%;
+        padding: 0%;
+    }
+    .imgTarjeta{
+        margin: 3%;
+        width: 94%;
+    }
+    .tituloTarjeta{
+        margin: 3%;
+        font-size:medium;
+    }
+    .textoTarjeta{
+        margin: 3%;
+        font-size:small;
+    }
+    .btnTarjeta{
+        padding: 1%;
+        padding-left: 7%;
+        padding-right: 7%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+    }
+}
+
+@media all and (max-width: 768px){
+    #fondo{
+        flex-direction: column;
+    }
+    #div1{
+        background-color: #565F6F;
+        color: #F8F6F4;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 33%;
+        /*border-radius: 10px;*/
+        /*border: 3px solid #6D5D6E;*/
+       position: inherit;
+       width: 100vw;
+    }
+    .tarjeta{
+        width: 90%;
+        aspect-ratio: 1/1.15;
+        margin: 5%;
+        padding: 0%;
+    }
+    .imgTarjeta{
+        width: 90%;
+        margin: 5%;
+    }
+    .tituloTarjeta{
+        margin: 5%;
+        margin-top: 1%;
+        color: #7E7C79;
+        padding: 0;
+        transition: 0.5s;
+    }
+    .textoTarjeta{
+        margin: 5%;
+        color: #BCA895;
+        padding: 0;
+        height: 50%;
+        transition: 0.5s;
+    }
+    .btnTarjeta{
+        padding: 2%;
+        padding-left: 7%;
+        padding-right: 7%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+}
+@media all and (max-width: 575px){
+    #proyectos{
+        flex-direction: column;
+    }
+}
