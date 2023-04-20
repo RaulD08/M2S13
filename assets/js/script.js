@@ -71,5 +71,12 @@ $(document).ready(function(){
         $("#proy6 .tituloTarjeta").removeClass("tituloTarjetaHover")
         $("#proy6 .btnTarjeta").removeClass("btnTarjetaHover")
     })
-    
+    $("#activadorPdf").click(function(){
+        $(".overlayPdf").fadeIn(300)
+        $(".overlayPdf").css("display","inline")
+    })
+    $(".overlayPdf").click(function(){
+        $(this).css("display","none")
+        
+    })
 })

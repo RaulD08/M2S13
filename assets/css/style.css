@@ -190,7 +190,42 @@ body{
                     border-color: #2D6175;
                     transition: 0.5s;
                 }
-
+.overlayPdf{
+    display: none;
+    background-color: #2C3333cc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+    .contPdf{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90vw;
+        height: 100vh;
+        z-index: 2;
+        margin: 0 auto;
+        padding: 0;
+    }
+#activadorPdf{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #DBBF84;
+    transition: 0.5s;
+}
+    #activadorPdf:hover{
+        color: #E6D89C;
+        cursor: pointer;
+        transition: 0.5s;
+    }
 
 @media all and (max-width: 1199px){
     *{
