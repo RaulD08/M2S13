@@ -64,8 +64,10 @@ body{
     #presentacion{
         background-color: #565F6F;
         flex: 1 1 100%;
+        margin-top: 5%;
         /*border-radius: 10px;*/
         /*border: 3px solid #b09daf;*/
+        font-size:xx-large
     }
     #cuerpoPresent{
         background-color: #565F6F;
@@ -73,12 +75,42 @@ body{
         /*border-radius: 10px;*/
         /*border: 3px solid #b09daf;*/
     }
+        #activadorPdf{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            color: #DBBF84;
+            transition: 0.5s;
+        }
+            #activadorPdf:hover{
+                color: #E6D89C;
+                cursor: pointer;
+                transition: 0.5s;
+            }
     #piePresent{
         background-color: #565F6F;
         flex: 1 1 100%;
         /*border-radius: 10px;*/
         /*border: 3px solid #b09daf;*/
     }
+        #e-mail, #phone, #whatsapp, #github, #linkedin{
+            padding: 0;
+            margin: 0%;
+            display: block;
+            color: #F8F6F4;
+        }
+        a{
+            padding: 0;
+            margin: 0%;
+            display: inline-block;
+            color: #F8F6F4;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        a:hover{
+            color: #E6D89C;
+            transition: 0.5s;
+        }
 #proyectos{
     display: flex;
     flex-flow: row wrap;
@@ -214,18 +246,10 @@ body{
         margin: 0 auto;
         padding: 0;
     }
-#activadorPdf{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    color: #DBBF84;
-    transition: 0.5s;
+
+@media (min-width: 1200px){
+    
 }
-    #activadorPdf:hover{
-        color: #E6D89C;
-        cursor: pointer;
-        transition: 0.5s;
-    }
 
 @media all and (max-width: 1199px){
     *{
@@ -262,6 +286,9 @@ body{
         margin-left: 4%;
         margin-bottom: 4%;
     }
+    #piePresent{
+        margin-top: 10%;
+    }
 }
 
 @media all and (max-width: 991px){
@@ -281,7 +308,7 @@ body{
     }
     .tituloTarjeta{
         margin: 3%;
-        font-size:medium;
+        font-size:small;
     }
     .textoTarjeta{
         margin: 3%;
@@ -315,7 +342,26 @@ body{
         /*border: 3px solid #6D5D6E;*/
        position: inherit;
        width: 100vw;
+       padding-top: 0;
+       padding-bottom: 0;
     }
+        #presentacion{
+            flex: 1 1 100%;
+            margin: 1%;
+            margin-top: 3%;
+            padding: 0;
+        }
+        #cuerpoPresent{
+            flex: 1 1 100%;
+            margin: 1%;
+            padding: 0;
+        }
+        #piePresent{
+            flex: 1 1 100%;
+            margin: 1%;
+            margin-top: 5%;
+            padding: 0;
+        }
     .tarjeta{
         width: 90%;
         aspect-ratio: 1/1.15;
@@ -357,5 +403,11 @@ body{
 @media all and (max-width: 575px){
     #proyectos{
         flex-direction: column;
+    }
+    .tituloTarjeta{
+        font-size: large;
+    }
+    .textoTarjeta{
+        font-size: medium;
     }
 }
